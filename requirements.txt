@@ -1,0 +1,10 @@
+# devctl dependencies
+#
+# pyyaml  — optional but recommended for robust devctl.yaml parsing.
+#           Without it, devctl falls back to a built-in minimal parser
+#           that handles the exact format shown in devctl.yaml.
+#
+# requests — NOT used. The GitHub API call uses stdlib urllib.request
+#             so no third-party HTTP library is required.
+
+pyyaml>=6.0

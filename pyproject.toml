@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devctl"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+[project.scripts]
+devctl = "cli:main"
+
+[tool.setuptools]
+py-modules = ["cli", "config", "git_ops", "state"]
+packages = ["commands"]
